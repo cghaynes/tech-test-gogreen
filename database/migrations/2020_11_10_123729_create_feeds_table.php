@@ -18,6 +18,7 @@ class CreateFeedsTable extends Migration
             $table->string('name');
             $table->string('url');
             $table->boolean('active');
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
         });
     }
